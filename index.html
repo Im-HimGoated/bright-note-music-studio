@@ -7,6 +7,14 @@
       name="description"
       content="Bright Note Music Studio offers warm, personal piano, guitar, and voice lessons for kids, teens, and adults."
     />
+    <meta name="theme-color" content="#42564d" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bright Note Music Studio" />
+    <meta
+      property="og:description"
+      content="Warm, personal piano, guitar, and voice lessons for kids, teens, and adults."
+    />
+    <meta property="og:image" content="assets/studio-hero.png" />
     <title>Bright Note Music Studio | Piano, Guitar, and Voice Lessons</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,8 +23,20 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MusicSchool",
+        "name": "Bright Note Music Studio",
+        "description": "Piano, guitar, and voice lessons for kids, teens, and adults.",
+        "email": "hello@brightnotemusicstudio.com",
+        "telephone": "+1-555-012-4680",
+        "sameAs": []
+      }
+    </script>
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Bright Note Music Studio home">
         <span class="brand-mark">B</span>
@@ -32,7 +52,7 @@
       </nav>
     </header>
 
-    <main id="top">
+    <main id="main">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-media" aria-hidden="true">
           <img src="assets/studio-hero.png" alt="" />
@@ -44,6 +64,11 @@
             Bright Note Music Studio teaches kids, teens, and adults with patient,
             thoughtful instruction shaped around each student's goals.
           </p>
+          <div class="hero-note" aria-label="Lesson highlights">
+            <span>Beginner-friendly</span>
+            <span>Returning students welcome</span>
+            <span>Daytime adult openings</span>
+          </div>
           <div class="hero-actions" aria-label="Primary actions">
             <a class="button primary" href="#contact">Start a conversation</a>
             <a class="button secondary" href="#adult-lessons">Adult daytime lessons</a>
@@ -226,6 +251,10 @@
           <a href="mailto:hello@brightnotemusicstudio.com">hello@brightnotemusicstudio.com</a>
           <a href="tel:+15550124680">(555) 012-4680</a>
           <p>Serving kids, teens, and adults by appointment.</p>
+          <div class="next-step">
+            <strong>What happens next</strong>
+            <span>We will reply with current openings, lesson fit, and the simplest next step.</span>
+          </div>
           <ul>
             <li>Student age and experience</li>
             <li>Piano, guitar, or voice</li>
@@ -240,7 +269,7 @@
 
     <footer class="site-footer">
       <p>&copy; 2026 Bright Note Music Studio</p>
-      <a href="#top">Back to top</a>
+      <a href="#main">Back to top</a>
     </footer>
   </body>
 </html>
